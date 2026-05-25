@@ -1,11 +1,12 @@
 diff --git a/main.py b/main.py
 --- a/main.py
 +++ b/main.py
-@@ -2,6 +2,7 @@ def greet(name):
-     return f"Hello Alice" if name == "Alice" else f"Hello, {name}!"
- 
- if __name__ == "__main__":
-+    import sys
+@@ -5,6 +5,7 @@ if __name__ == "__main__":
+     import sys
      if len(sys.argv) > 1:
          print(greet(sys.argv[1]))
++        sys.exit(0)
      else:
+-        print("Please provide a name as an argument.")
++        print("Please provide a name as an argument.", file=sys.stderr)
++        sys.exit(1)
