@@ -1,0 +1,3 @@
+- Update dependency version to resolve compatibility issues
+- Add missing configuration parameter for new feature activation
+- Optimize database query to reduce latency
