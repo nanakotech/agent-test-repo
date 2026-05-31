@@ -1,2 +1,2 @@
-print('agent test v1')
+print("Agent test v1")
 print('OpenClaw improvement applied')
